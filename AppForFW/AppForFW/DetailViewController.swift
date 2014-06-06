@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import ExamFramework
+
 
 class DetailViewController: UIViewController {
 
     @IBOutlet var detailDescriptionLabel: UILabel
-
+    
 
     var detailItem: AnyObject? {
         didSet {
-            // Update the view.
             self.configureView()
+            var c = Calc(name:"名前");
+            NSLog("%@", c.name);
+            
+//            c.value1 = 2
+//            Calc.doSomething()
+            
         }
     }
 
