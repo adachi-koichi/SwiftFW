@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D093D49219417E3200693BAC /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D093D49119417E3200693BAC /* ExamFramework.framework */; };
-		D093D49319417EA200693BAC /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D093D49119417E3200693BAC /* ExamFramework.framework */; };
-		D093D49419417EA200693BAC /* ExamFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D093D49119417E3200693BAC /* ExamFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D0CBC34C1941C6A4008E179A /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CBC3491941BCC7008E179A /* ExamFramework.framework */; };
+		D0CBC34E1941F0ED008E179A /* ExamFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D0CBC3491941BCC7008E179A /* ExamFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D0FCC3C31940B7D9009F4D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCC3C21940B7D9009F4D89 /* AppDelegate.swift */; };
 		D0FCC3C51940B7D9009F4D89 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCC3C41940B7D9009F4D89 /* MasterViewController.swift */; };
 		D0FCC3C71940B7D9009F4D89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCC3C61940B7D9009F4D89 /* DetailViewController.swift */; };
@@ -31,11 +30,11 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		D093D49519417EA200693BAC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D093D49419417EA200693BAC /* ExamFramework.framework in Embed Frameworks */,
+				D0CBC34E1941F0ED008E179A /* ExamFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D093D49119417E3200693BAC /* ExamFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExamFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ExamFramework-ghgrqfojwbzdkgavtugevkodzfiu/Build/Products/Debug-iphoneos/ExamFramework.framework"; sourceTree = "<group>"; };
+		D0CBC3491941BCC7008E179A /* ExamFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExamFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos/ExamFramework.framework"; sourceTree = "<group>"; };
 		D0FCC3BD1940B7D9009F4D89 /* AppForFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCC3C11940B7D9009F4D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCC3C21940B7D9009F4D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D093D49319417EA200693BAC /* ExamFramework.framework in Frameworks */,
-				D093D49219417E3200693BAC /* ExamFramework.framework in Frameworks */,
+				D0CBC34C1941C6A4008E179A /* ExamFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +78,7 @@
 		D0FCC3B41940B7D9009F4D89 = {
 			isa = PBXGroup;
 			children = (
-				D093D49119417E3200693BAC /* ExamFramework.framework */,
+				D0CBC3491941BCC7008E179A /* ExamFramework.framework */,
 				D0FCC3E8194148B0009F4D89 /* ObjCBridgingHeader.h */,
 				D0FCC3BF1940B7D9009F4D89 /* AppForFW */,
 				D0FCC3D41940B7D9009F4D89 /* AppForFWTests */,
@@ -355,9 +353,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-ghgrqfojwbzdkgavtugevkodzfiu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -375,9 +374,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-ghgrqfojwbzdkgavtugevkodzfiu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-all_load",

@@ -24,6 +24,7 @@ class DetailViewController: UIViewController {
 //            c.value1 = 2
 //            Calc.doSomething()
             
+            println(c.getConst());
         }
     }
 
