@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MakeSwiftModule/MakeSwiftModule.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AppForFW/AppForFW.xcodeproj">
    </FileRef>
    <FileRef

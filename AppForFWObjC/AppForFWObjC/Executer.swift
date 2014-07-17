@@ -6,6 +6,7 @@
 
 import Foundation
 import ExamFramework
+import ModuleLoggerSwift
 
 @objc
 class Executer{
@@ -14,5 +15,6 @@ class Executer{
         LoggerObjC.output("Swiftから、ObjCのコードを呼ぶ")
         FWLoggerSwift.output("Swiftから、FWのSwiftコードを呼ぶ")
         FWLoggerObjC.output("Swiftから、FWのObjCコードを呼ぶ")
+        
     }
 }
