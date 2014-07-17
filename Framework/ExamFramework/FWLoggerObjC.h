@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 sgspecial. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface DummyObjC : NSObject
+@interface FWLoggerObjC : NSObject
 
 +(void)output:(NSString*)input;
 - (instancetype)initWithText:(NSString*)text;

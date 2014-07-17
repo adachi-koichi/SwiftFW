@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoggerObjC.h"
+#import "FWLoggerObjC.h"
 //#import <ExamFramework/LoggerObjC.h>
 
 //! Project version number for ExamFramework.

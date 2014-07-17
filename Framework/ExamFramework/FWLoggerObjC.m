@@ -6,10 +6,9 @@
 //  Copyright (c) 2014年 sgspecial. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "DummyObjC.h"
+#import "FWLoggerObjC.h"
 
-@implementation DummyObjC{
+@implementation FWLoggerObjC{
     NSString *_text;
 }
 
@@ -26,6 +25,6 @@
     return self;
 }
 -(void)output{
-    [DummyObjC output:_text];
+    [FWLoggerObjC output:_text];
 }
 @end

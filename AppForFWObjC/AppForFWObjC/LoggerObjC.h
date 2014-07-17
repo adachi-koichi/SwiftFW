@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 sgspecial. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface LoggerObjC : NSObject
 

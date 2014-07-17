@@ -6,8 +6,9 @@
 
 #import "AppDelegate.h"
 #import "AppForFWObjC-Swift.h"
-#import "DummyObjC.h"
-#import <ExamFramework/ExamFramework.h>
+#import "LoggerObjC.h"
+#import "ExecuterObjC.h"
+
 
 @interface AppDelegate ()
 
@@ -17,14 +18,9 @@
             
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Dummy method1];
+    [Executer executeFromSwift];
+    [ExecuterObjC executeFromObjC];
     
-    [Dummy callObjCMethod];
-    
-    [Dummy callObjCMethodInFW];
-    
-    [Logger output:@"ObjCから、FrameworkのSwiftコードを呼ぶ"];
-    [LoggerObjC output:@""];
     
     return YES;
 }

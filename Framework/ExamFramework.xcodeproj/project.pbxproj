@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0C9711619762481006D8B96 /* LoggerObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C9711519762481006D8B96 /* LoggerObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0C9711819762492006D8B96 /* LoggerObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9711719762492006D8B96 /* LoggerObjC.m */; };
-		D0C9711B19762D0E006D8B96 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9711A19762D0E006D8B96 /* Logger.swift */; };
+		D0C9711619762481006D8B96 /* FWLoggerObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C9711519762481006D8B96 /* FWLoggerObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0C9711819762492006D8B96 /* FWLoggerObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9711719762492006D8B96 /* FWLoggerObjC.m */; };
+		D0C9711B19762D0E006D8B96 /* FWLoggerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9711A19762D0E006D8B96 /* FWLoggerSwift.swift */; };
 		D0FCC39E1940B72A009F4D89 /* ExamFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FCC39D1940B72A009F4D89 /* ExamFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0FCC3E71940B9A4009F4D89 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FCC3E61940B9A4009F4D89 /* Calc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0C9711519762481006D8B96 /* LoggerObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerObjC.h; sourceTree = "<group>"; };
-		D0C9711719762492006D8B96 /* LoggerObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerObjC.m; sourceTree = "<group>"; };
+		D0C9711519762481006D8B96 /* FWLoggerObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWLoggerObjC.h; sourceTree = "<group>"; };
+		D0C9711719762492006D8B96 /* FWLoggerObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWLoggerObjC.m; sourceTree = "<group>"; };
 		D0C9711919762AD1006D8B96 /* ExamFramework-BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExamFramework-BridgeHeader.h"; sourceTree = "<group>"; };
-		D0C9711A19762D0E006D8B96 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D0C9711A19762D0E006D8B96 /* FWLoggerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWLoggerSwift.swift; sourceTree = "<group>"; };
 		D0FCC3981940B72A009F4D89 /* ExamFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExamFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCC39C1940B72A009F4D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCC39D1940B72A009F4D89 /* ExamFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExamFramework.h; sourceTree = "<group>"; };
@@ -56,12 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				D0FCC39D1940B72A009F4D89 /* ExamFramework.h */,
+				D0C9711519762481006D8B96 /* FWLoggerObjC.h */,
+				D0C9711719762492006D8B96 /* FWLoggerObjC.m */,
+				D0C9711A19762D0E006D8B96 /* FWLoggerSwift.swift */,
+				D0C9711919762AD1006D8B96 /* ExamFramework-BridgeHeader.h */,
 				D0FCC39B1940B72A009F4D89 /* Supporting Files */,
 				D0FCC3E61940B9A4009F4D89 /* Calc.swift */,
-				D0C9711719762492006D8B96 /* LoggerObjC.m */,
-				D0C9711519762481006D8B96 /* LoggerObjC.h */,
-				D0C9711919762AD1006D8B96 /* ExamFramework-BridgeHeader.h */,
-				D0C9711A19762D0E006D8B96 /* Logger.swift */,
 			);
 			path = ExamFramework;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C9711619762481006D8B96 /* LoggerObjC.h in Headers */,
+				D0C9711619762481006D8B96 /* FWLoggerObjC.h in Headers */,
 				D0FCC39E1940B72A009F4D89 /* ExamFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FCC3E71940B9A4009F4D89 /* Calc.swift in Sources */,
-				D0C9711B19762D0E006D8B96 /* Logger.swift in Sources */,
-				D0C9711819762492006D8B96 /* LoggerObjC.m in Sources */,
+				D0C9711B19762D0E006D8B96 /* FWLoggerSwift.swift in Sources */,
+				D0C9711819762492006D8B96 /* FWLoggerObjC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
