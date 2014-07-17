@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Framework/ExamFramework.xcodeproj">
+      location = "group:AppForFW/AppForFW.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AppForFW/AppForFW.xcodeproj">
+      location = "group:AppForFWObjC/AppForFWObjC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Framework/ExamFramework.xcodeproj">
    </FileRef>
 </Workspace>

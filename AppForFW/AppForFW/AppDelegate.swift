@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ExamFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        // Override point for customization after application launch.
+        
+        LoggerObjC.output("ObjCのstaticメソッドテスト")
+        LoggerObjC(text: "ObjCのインスタンスメソッドテスト").output()
+        Logger.output("swiftのstaticメソッドテスト")
+        Logger(input: "swiftのインスタンスメソッドテスト").output()
+
         return true
     }
 
