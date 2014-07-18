@@ -17,11 +17,11 @@
 
 +(void)executeFromObjC{
     
-    [LoggerSwift output:@"ObjCから、Swiftコードを呼んでいる"];
-    [LoggerObjC output:@"ObjCから、ObjCコードを呼んでいる"];
+    [LoggerSwift output:@"ObjCから、Swiftコードを呼んでいる(#import \"プロジェクト名-Swift.h\"）"];
+    [LoggerObjC output:@"ObjCから、ObjCコードを呼んでいる。（#import \"xxx.h\")"];
     
-    [FWLoggerSwift output:@"ObjCから、FrameworkのSwiftコードを呼ぶ。（勝手に内部でObjCに変換しているものを呼んでいる）"];
-    [FWLoggerObjC output:@"ObjCから、FrameworkのObjCコードを呼ぶ"];
+    [FWLoggerSwift output:@"ObjCから、FrameworkのSwiftコードを呼ぶ。（#import <xxx/xxx.h>）（勝手に内部でObjCに変換しているものを呼んでいる）"];
+    [FWLoggerObjC output:@"ObjCから、FrameworkのObjCコードを呼ぶ（#import <xxx/xxx.h>）"];
 
 }
 
