@@ -12,9 +12,6 @@
 		D089117019779AFB00785770 /* ExamFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D089116C19779AD800785770 /* ExamFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D089117219779E1200785770 /* LoggerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089117119779E1200785770 /* LoggerSwift.swift */; };
 		D089117519779EA900785770 /* ExecuterObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D089117419779EA900785770 /* ExecuterObjC.m */; };
-		D0BE9D451977C5A90019FB9E /* ModuleLoggerSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0BE9D421977C5A90019FB9E /* ModuleLoggerSwift.a */; };
-		D0BE9D461977C5A90019FB9E /* ModuleLoggerSwift.swiftdoc in Resources */ = {isa = PBXBuildFile; fileRef = D0BE9D431977C5A90019FB9E /* ModuleLoggerSwift.swiftdoc */; };
-		D0BE9D471977C5A90019FB9E /* ModuleLoggerSwift.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = D0BE9D441977C5A90019FB9E /* ModuleLoggerSwift.swiftmodule */; };
 		D0C9712B19762E91006D8B96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9712A19762E91006D8B96 /* main.m */; };
 		D0C9712E19762E91006D8B96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9712D19762E91006D8B96 /* AppDelegate.m */; };
 		D0C9713119762E91006D8B96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9713019762E91006D8B96 /* ViewController.m */; };
@@ -54,9 +51,6 @@
 		D089117119779E1200785770 /* LoggerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggerSwift.swift; path = AppForFWObjC/LoggerSwift.swift; sourceTree = "<group>"; };
 		D089117319779E9E00785770 /* ExecuterObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExecuterObjC.h; sourceTree = "<group>"; };
 		D089117419779EA900785770 /* ExecuterObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExecuterObjC.m; sourceTree = "<group>"; };
-		D0BE9D421977C5A90019FB9E /* ModuleLoggerSwift.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ModuleLoggerSwift.a; sourceTree = "<group>"; };
-		D0BE9D431977C5A90019FB9E /* ModuleLoggerSwift.swiftdoc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModuleLoggerSwift.swiftdoc; sourceTree = "<group>"; };
-		D0BE9D441977C5A90019FB9E /* ModuleLoggerSwift.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModuleLoggerSwift.swiftmodule; sourceTree = "<group>"; };
 		D0C9712519762E91006D8B96 /* AppForFWObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForFWObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C9712919762E91006D8B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0C9712A19762E91006D8B96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,7 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D089116D19779AD800785770 /* ExamFramework.framework in Frameworks */,
-				D0BE9D451977C5A90019FB9E /* ModuleLoggerSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +89,6 @@
 		D0C9711C19762E91006D8B96 = {
 			isa = PBXGroup;
 			children = (
-				D0BE9D421977C5A90019FB9E /* ModuleLoggerSwift.a */,
-				D0BE9D431977C5A90019FB9E /* ModuleLoggerSwift.swiftdoc */,
-				D0BE9D441977C5A90019FB9E /* ModuleLoggerSwift.swiftmodule */,
 				D089116C19779AD800785770 /* ExamFramework.framework */,
 				D089117119779E1200785770 /* LoggerSwift.swift */,
 				D0084C2419767FF700A50649 /* LoggerObjC.h */,
@@ -245,8 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0C9713419762E91006D8B96 /* Main.storyboard in Resources */,
-				D0BE9D471977C5A90019FB9E /* ModuleLoggerSwift.swiftmodule in Resources */,
-				D0BE9D461977C5A90019FB9E /* ModuleLoggerSwift.swiftdoc in Resources */,
 				D0C9713619762E91006D8B96 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +395,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/ModuleLoggerSwift";
+				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppForFWObjC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -437,7 +425,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)/ModuleLoggerSwift";
+				SWIFT_INCLUDE_PATHS = "$(SOURCE_ROOT)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AppForFWObjC-Bridging-Header.h";
 			};
 			name = Release;

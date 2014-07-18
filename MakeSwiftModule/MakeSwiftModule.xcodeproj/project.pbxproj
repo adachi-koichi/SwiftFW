@@ -236,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "env > env.txt\n\nPWD=${shell pwd}\nAPP_NAME=main\nMODULE_NAME=ModuleLoggerSwift\nLIB_NAME=lib${MODULE_NAME}.dylib\nLIB_PATH=${PWD}/${LIB_NAME}\nSWIFT_MODULE_PATH=${PWD}/${MODULE_NAME}.swiftmodule\n\nxcrun swift -emit-library -o ${LIB_PATH} -Xlinker -install_name -Xlinker @rpath/${LIB_NAME} -emit-module -emit-module-path ${SWIFT_MODULE_PATH} -module-name ${MODULE_NAME} -module-link-name ${MODULE_NAME} -v \\\n${MODULE_NAME}.swift\nxcrun swift ${APP_NAME}.swift -o ${APP_NAME} -I ${PWD} -L ${PWD} -Xlinker -rpath -Xlinker @executable_path/ -v\n\n\n";
+			shellScript = "env > env.txt\n\nPWD=${shell pwd}\nAPP_NAME=MakeSwiftModule\nMODULE_NAME=ModuleLoggerSwift\nLIB_NAME=lib${MODULE_NAME}.dylib\nLIB_PATH=${PWD}/${LIB_NAME}\nSWIFT_MODULE_PATH=${PWD}/${MODULE_NAME}.swiftmodule\n\nxcrun -sdk macosx swift -emit-library -o ${LIB_PATH} -Xlinker -install_name -Xlinker @rpath/${LIB_NAME} -emit-module -emit-module-path ${SWIFT_MODULE_PATH} -module-name ${MODULE_NAME} -module-link-name ${MODULE_NAME} -v ${APP_NAME}/${MODULE_NAME}.swift\n\nxcrun swift ${APP_NAME}/${MODULE_NAME}.swift -o ${APP_NAME} -I ${PWD} -L ${PWD} -Xlinker -rpath -Xlinker @executable_path/ -v\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -465,6 +465,7 @@
 				D0BE9D381977B14C0019FB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
