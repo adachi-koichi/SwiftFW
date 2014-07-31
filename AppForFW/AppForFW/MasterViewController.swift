@@ -2,8 +2,6 @@
 //  MasterViewController.swift
 //  AppForFW
 //
-//  Created by B04536 on 2014/06/05.
-//  Copyright (c) 2014年 sgspecial. All rights reserved.
 //
 
 import UIKit
