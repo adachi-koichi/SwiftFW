@@ -21,6 +21,7 @@
     [Executer executeFromSwift];
     [ExecuterObjC executeFromObjC];
     
+    [Executer executeExamCode];
     
     return YES;
 }

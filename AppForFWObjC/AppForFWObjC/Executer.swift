@@ -15,4 +15,8 @@ class Executer{
         FWLoggerSwift.output("Swiftから、FWのSwiftコードを呼ぶ（import ExamFramework）")
         FWLoggerObjC.output("Swiftから、FWのObjCコードを呼ぶ（import ExamFramework）")
     }
+    
+    class func executeExamCode()->(){
+        ExamClosure.execute();
+    }
 }

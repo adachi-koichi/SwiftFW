@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0084C2519767FF700A50649 /* LoggerObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D0084C2319767FF700A50649 /* LoggerObjC.m */; };
+		D0124E41198A224900F84AED /* ExamClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0124E40198A224900F84AED /* ExamClosure.swift */; };
 		D089116D19779AD800785770 /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D089116C19779AD800785770 /* ExamFramework.framework */; };
 		D089117019779AFB00785770 /* ExamFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D089116C19779AD800785770 /* ExamFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D089117219779E1200785770 /* LoggerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089117119779E1200785770 /* LoggerSwift.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		D0084C2319767FF700A50649 /* LoggerObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoggerObjC.m; path = AppForFWObjC/LoggerObjC.m; sourceTree = "<group>"; };
 		D0084C2419767FF700A50649 /* LoggerObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerObjC.h; path = AppForFWObjC/LoggerObjC.h; sourceTree = "<group>"; };
+		D0124E40198A224900F84AED /* ExamClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExamClosure.swift; path = AppForFWObjC/ExamClosure.swift; sourceTree = "<group>"; };
 		D089116C19779AD800785770 /* ExamFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExamFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos/ExamFramework.framework"; sourceTree = "<group>"; };
 		D089117119779E1200785770 /* LoggerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoggerSwift.swift; path = AppForFWObjC/LoggerSwift.swift; sourceTree = "<group>"; };
 		D089117319779E9E00785770 /* ExecuterObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExecuterObjC.h; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		D0C9711C19762E91006D8B96 = {
 			isa = PBXGroup;
 			children = (
+				D0124E40198A224900F84AED /* ExamClosure.swift */,
 				D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */,
 				D089116C19779AD800785770 /* ExamFramework.framework */,
 				D089117119779E1200785770 /* LoggerSwift.swift */,
@@ -191,6 +194,7 @@
 				D0084C2519767FF700A50649 /* LoggerObjC.m in Sources */,
 				D089117219779E1200785770 /* LoggerSwift.swift in Sources */,
 				D0C9713119762E91006D8B96 /* ViewController.m in Sources */,
+				D0124E41198A224900F84AED /* ExamClosure.swift in Sources */,
 				D0C9712E19762E91006D8B96 /* AppDelegate.m in Sources */,
 				D0D0DC52197633400012B3D1 /* Executer.swift in Sources */,
 				D0C9712B19762E91006D8B96 /* main.m in Sources */,
