@@ -2,17 +2,16 @@
 //  Logger.swift
 //  ExamFramework
 //
-//  Created by B04536 on 2014/07/16.
-//  Copyright (c) 2014年 sgspecial. All rights reserved.
 //
 
 import Foundation
 
-@objc
-class FWLoggerSwift{
+@objc(FWLoggerSwift)    //SWIFT_CLASS("FWLoggerSwift")
+//@objc                 //SWIFT_CLASS("_TtC13ExamFramework13FWLoggerSwift")
+public class FWLoggerSwift {
     var _input : String
 
-    class func output(input : String){
+    public class func output(input : String){
         println(input)
     }
     

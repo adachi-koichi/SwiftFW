@@ -18,6 +18,7 @@
 		D0C9713419762E91006D8B96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C9713219762E91006D8B96 /* Main.storyboard */; };
 		D0C9713619762E91006D8B96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C9713519762E91006D8B96 /* Images.xcassets */; };
 		D0C9714219762E91006D8B96 /* AppForFWObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C9714119762E91006D8B96 /* AppForFWObjCTests.m */; };
+		D0CC1FEF1989D6C600CFF45E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */; };
 		D0D0DC52197633400012B3D1 /* Executer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0DC51197633400012B3D1 /* Executer.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		D0C9713B19762E91006D8B96 /* AppForFWObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppForFWObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C9714019762E91006D8B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0C9714119762E91006D8B96 /* AppForFWObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppForFWObjCTests.m; sourceTree = "<group>"; };
+		D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D0D0DC501976333F0012B3D1 /* AppForFWObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppForFWObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0D0DC51197633400012B3D1 /* Executer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Executer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CC1FEF1989D6C600CFF45E /* CoreLocation.framework in Frameworks */,
 				D089116D19779AD800785770 /* ExamFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		D0C9711C19762E91006D8B96 = {
 			isa = PBXGroup;
 			children = (
+				D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */,
 				D089116C19779AD800785770 /* ExamFramework.framework */,
 				D089117119779E1200785770 /* LoggerSwift.swift */,
 				D0084C2419767FF700A50649 /* LoggerObjC.h */,
@@ -383,7 +387,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFWObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +417,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFWObjC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

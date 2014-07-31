@@ -56,12 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				D0FCC39D1940B72A009F4D89 /* ExamFramework.h */,
+				D0C9711A19762D0E006D8B96 /* FWLoggerSwift.swift */,
 				D0C9711519762481006D8B96 /* FWLoggerObjC.h */,
 				D0C9711719762492006D8B96 /* FWLoggerObjC.m */,
-				D0C9711A19762D0E006D8B96 /* FWLoggerSwift.swift */,
+				D0FCC3E61940B9A4009F4D89 /* Calc.swift */,
 				D0C9711919762AD1006D8B96 /* ExamFramework-BridgeHeader.h */,
 				D0FCC39B1940B72A009F4D89 /* Supporting Files */,
-				D0FCC3E61940B9A4009F4D89 /* Calc.swift */,
 			);
 			path = ExamFramework;
 			sourceTree = "<group>";
@@ -118,6 +118,7 @@
 				TargetAttributes = {
 					D0FCC3971940B72A009F4D89 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 3SJ2U4Q525;
 					};
 				};
 			};
@@ -267,8 +268,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					arm64,
+					armv7,
+				);
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -279,13 +286,13 @@
 				);
 				INFOPLIST_FILE = ExamFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "./ExamFramework/ExamFramework-BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
@@ -296,8 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					arm64,
+					armv7,
+				);
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -308,12 +321,12 @@
 				);
 				INFOPLIST_FILE = ExamFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "./ExamFramework/ExamFramework-BridgeHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
