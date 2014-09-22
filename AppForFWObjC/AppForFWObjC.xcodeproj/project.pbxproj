@@ -18,7 +18,8 @@
 		D0C9713619762E91006D8B96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C9713519762E91006D8B96 /* Images.xcassets */; };
 		D0CC1FEF1989D6C600CFF45E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */; };
 		D0D0DC52197633400012B3D1 /* Executer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0DC51197633400012B3D1 /* Executer.swift */; };
-		FC52C8F619D0313A0037562C /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC52C8F519D0313A0037562C /* ExamFramework.framework */; };
+		FC52C8FC19D0345F0037562C /* ExamFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC52C8FB19D0345F0037562C /* ExamFramework.framework */; };
+		FC52C8FD19D0345F0037562C /* ExamFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC52C8FB19D0345F0037562C /* ExamFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FC52C8FD19D0345F0037562C /* ExamFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +54,7 @@
 		D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D0D0DC501976333F0012B3D1 /* AppForFWObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppForFWObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 		D0D0DC51197633400012B3D1 /* Executer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Executer.swift; sourceTree = "<group>"; };
-		FC52C8F519D0313A0037562C /* ExamFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExamFramework.framework; path = "../Framework/build/Debug-iphoneos/ExamFramework.framework"; sourceTree = "<group>"; };
+		FC52C8FB19D0345F0037562C /* ExamFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExamFramework.framework; path = "/Users/default/Library/Developer/Xcode/DerivedData/ExamFramework-elqebmfhjzlzwidlprkhncigmorn/Build/Products/Debug-iphoneos/ExamFramework.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC52C8F619D0313A0037562C /* ExamFramework.framework in Frameworks */,
+				FC52C8FC19D0345F0037562C /* ExamFramework.framework in Frameworks */,
 				D0CC1FEF1989D6C600CFF45E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +73,7 @@
 		D0C9711C19762E91006D8B96 = {
 			isa = PBXGroup;
 			children = (
-				FC52C8F519D0313A0037562C /* ExamFramework.framework */,
+				FC52C8FB19D0345F0037562C /* ExamFramework.framework */,
 				D0124E40198A224900F84AED /* ExamClosure.swift */,
 				D0CC1FEE1989D6C600CFF45E /* CoreLocation.framework */,
 				D089117119779E1200785770 /* LoggerSwift.swift */,
@@ -299,6 +301,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 					"/Users/default/Dropbox/XCode6Project/ExamFramework/Framework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-elqebmfhjzlzwidlprkhncigmorn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFWObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -331,6 +334,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-alpzxferxyhpjjfpotvagaheccpn/Build/Products/Debug-iphoneos",
 					"/Users/default/Dropbox/XCode6Project/ExamFramework/Framework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExamFramework-elqebmfhjzlzwidlprkhncigmorn/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = AppForFWObjC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
