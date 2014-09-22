@@ -25,19 +25,8 @@
 		D0BE9D191977AFBC0019FB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE9D181977AFBC0019FB9E /* ViewController.swift */; };
 		D0BE9D1C1977AFBC0019FB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BE9D1A1977AFBC0019FB9E /* Main.storyboard */; };
 		D0BE9D1E1977AFBC0019FB9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BE9D1D1977AFBC0019FB9E /* Images.xcassets */; };
-		D0BE9D2A1977AFBC0019FB9E /* MakeSwiftModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE9D291977AFBC0019FB9E /* MakeSwiftModuleTests.swift */; };
 		D0BE9D341977B0940019FB9E /* ModuleLoggerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE9D331977B0940019FB9E /* ModuleLoggerSwift.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D0BE9D241977AFBC0019FB9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0BE9D091977AFBC0019FB9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0BE9D101977AFBC0019FB9E;
-			remoteInfo = MakeSwiftModule;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D0BE9D111977AFBC0019FB9E /* MakeSwiftModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSwiftModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +35,6 @@
 		D0BE9D181977AFBC0019FB9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0BE9D1B1977AFBC0019FB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0BE9D1D1977AFBC0019FB9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D0BE9D231977AFBC0019FB9E /* MakeSwiftModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeSwiftModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BE9D281977AFBC0019FB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BE9D291977AFBC0019FB9E /* MakeSwiftModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSwiftModuleTests.swift; sourceTree = "<group>"; };
 		D0BE9D331977B0940019FB9E /* ModuleLoggerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleLoggerSwift.swift; sourceTree = "<group>"; };
@@ -54,13 +42,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		D0BE9D0E1977AFBC0019FB9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0BE9D201977AFBC0019FB9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				D0BE9D111977AFBC0019FB9E /* MakeSwiftModule.app */,
-				D0BE9D231977AFBC0019FB9E /* MakeSwiftModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +126,6 @@
 			productReference = D0BE9D111977AFBC0019FB9E /* MakeSwiftModule.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0BE9D221977AFBC0019FB9E /* MakeSwiftModuleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0BE9D301977AFBC0019FB9E /* Build configuration list for PBXNativeTarget "MakeSwiftModuleTests" */;
-			buildPhases = (
-				D0BE9D1F1977AFBC0019FB9E /* Sources */,
-				D0BE9D201977AFBC0019FB9E /* Frameworks */,
-				D0BE9D211977AFBC0019FB9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0BE9D251977AFBC0019FB9E /* PBXTargetDependency */,
-			);
-			name = MakeSwiftModuleTests;
-			productName = MakeSwiftModuleTests;
-			productReference = D0BE9D231977AFBC0019FB9E /* MakeSwiftModuleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,10 +137,7 @@
 				TargetAttributes = {
 					D0BE9D101977AFBC0019FB9E = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					D0BE9D221977AFBC0019FB9E = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = D0BE9D101977AFBC0019FB9E;
+						DevelopmentTeam = 4KV8ZM2S63;
 					};
 					D0BE9D351977B14C0019FB9E = {
 						CreatedOnToolsVersion = 6.0;
@@ -199,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				D0BE9D101977AFBC0019FB9E /* MakeSwiftModule */,
-				D0BE9D221977AFBC0019FB9E /* MakeSwiftModuleTests */,
 				D0BE9D351977B14C0019FB9E /* MakeModule */,
 			);
 		};
@@ -212,13 +170,6 @@
 			files = (
 				D0BE9D1C1977AFBC0019FB9E /* Main.storyboard in Resources */,
 				D0BE9D1E1977AFBC0019FB9E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0BE9D211977AFBC0019FB9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +187,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "env > env.txt\n\nPWD=${shell pwd}\nAPP_NAME=MakeSwiftModule\nMODULE_NAME=ModuleLoggerSwift\nLIB_NAME=lib${MODULE_NAME}.dylib\nLIB_PATH=${PWD}/${LIB_NAME}\nSWIFT_MODULE_PATH=${PWD}/${MODULE_NAME}.swiftmodule\n\nxcrun -sdk macosx swift -emit-library -o ${LIB_PATH} -Xlinker -install_name -Xlinker @rpath/${LIB_NAME} -emit-module -emit-module-path ${SWIFT_MODULE_PATH} -module-name ${MODULE_NAME} -module-link-name ${MODULE_NAME} -v ${APP_NAME}/${MODULE_NAME}.swift\n\nxcrun swift ${APP_NAME}/${MODULE_NAME}.swift -o ${APP_NAME} -I ${PWD} -L ${PWD} -Xlinker -rpath -Xlinker @executable_path/ -v\n\n";
+			shellScript = "env > env.txt\n\nPWD=${shell pwd}\nAPP_NAME=MakeSwiftModule\nMODULE_NAME=ModuleLoggerSwift\nLIB_NAME=lib${MODULE_NAME}.dylib\nLIB_PATH=${PWD}/${LIB_NAME}\nSWIFT_MODULE_PATH=${PWD}/${MODULE_NAME}.swiftmodule\n\nxcrun -sdk iphoneos swiftc -emit-library -emit-object ${APP_NAME}/${MODULE_NAME}.swift -sdk $(xcrun --show-sdk-path --sdk iphoneos) -module-name Logger\nar rcs libLogger.a Logger.o\n\nxcrun -sdk iphoneos swiftc -emit-module ${APP_NAME}/${MODULE_NAME}.swift -o ${APP_NAME} -I ${PWD} -L ${PWD} -Xlinker -rpath -Xlinker @executable_path/ -v\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -251,23 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0BE9D1F1977AFBC0019FB9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0BE9D2A1977AFBC0019FB9E /* MakeSwiftModuleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D0BE9D251977AFBC0019FB9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0BE9D101977AFBC0019FB9E /* MakeSwiftModule */;
-			targetProxy = D0BE9D241977AFBC0019FB9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0BE9D1A1977AFBC0019FB9E /* Main.storyboard */ = {
@@ -298,6 +233,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -317,7 +253,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "7490D8C1-B3AA-48F9-A766-E2C0B82D8FF2";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -340,6 +275,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -352,7 +288,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "7490D8C1-B3AA-48F9-A766-E2C0B82D8FF2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,40 +312,6 @@
 				INFOPLIST_FILE = MakeSwiftModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D0BE9D311977AFBC0019FB9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakeSwiftModule.app/MakeSwiftModule";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MakeSwiftModuleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		D0BE9D321977AFBC0019FB9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MakeSwiftModule.app/MakeSwiftModule";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MakeSwiftModuleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -445,15 +346,6 @@
 			buildConfigurations = (
 				D0BE9D2E1977AFBC0019FB9E /* Debug */,
 				D0BE9D2F1977AFBC0019FB9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0BE9D301977AFBC0019FB9E /* Build configuration list for PBXNativeTarget "MakeSwiftModuleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0BE9D311977AFBC0019FB9E /* Debug */,
-				D0BE9D321977AFBC0019FB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
