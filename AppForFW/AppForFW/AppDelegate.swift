@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         
-        LoggerObjC.output("ObjCのstaticメソッドテスト")
-        LoggerObjC(text: "ObjCのインスタンスメソッドテスト").output()
-        Logger.output("swiftのstaticメソッドテスト")
-        Logger(input: "swiftのインスタンスメソッドテスト").output()
+        FWLoggerObjC.output("ObjCのstaticメソッドテスト")
+        FWLoggerObjC(text: "ObjCのインスタンスメソッドテスト").output()
+        FWLoggerSwift.output("swiftのstaticメソッドテスト")
+        FWLoggerSwift(input: "swiftのインスタンスメソッドテスト").output()
 
         return true
     }

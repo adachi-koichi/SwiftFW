@@ -15,11 +15,12 @@ public class FWLoggerSwift {
         println(input)
     }
     
-    init(input : String){
+    
+    public required init(input : String){
         _input = input
     }
     
-    func output(){
+    public func output(){
         FWLoggerSwift.output(_input)
     }
 }
